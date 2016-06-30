@@ -17,7 +17,7 @@ def fill_blank(ml_string,ml_list,parts_of_speech,count,number,answer,blank_numbe
     '''
     for word in ml_list:
         replacement=word_in_pos(word,parts_of_speech)
-        if replacement != None:
+        if replacement:
             user_input = raw_input('What is the answer in '+replacement+': ')
             if user_input == answer[number[0]]:
                 ml_string = ml_string.replace(replacement,user_input)
