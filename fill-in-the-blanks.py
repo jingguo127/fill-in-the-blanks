@@ -74,7 +74,7 @@ def game_process(choice_number,content_of_levels,blank_parts,answer_list):
     wrong_chances = 5 - choice_number
     blank_number = len(parts_of_speech)
     print ml_string
-    while (countA[0] != wrong_chances and numberA[0] != blank_number):
+    while countA[0] != wrong_chances and numberA[0] != blank_number:
         ml_string = play_game(ml_string, parts_of_speech,countA,numberA,wrong_chances,blank_number,answer_list)
 
 def start_game():
